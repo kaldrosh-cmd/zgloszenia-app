@@ -9,22 +9,29 @@
         <h1>System zgłoszeń awarii</h1>
         <p>Oto system zgłoszeń awarii, poniżej znajdują się aktualne awarie: </p>
         <h2>Nowe zgłoszenie</h2>
-        <form action="/index.html" method="post"></form>
+        <form action="/index.html" method="post">
             <p>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name"/>
+                <label for="title">Tytuł:</label>
+                <input type="text" id="title" name="user_title"/>
             </p>
             <p>
-                <label for="mail">E-Mail:</label>
-                <input type="text" id="mail" name="user_email"/>
+                <label for="description">Opis:</label>
+                <textarea id="description" name="user_description"></textarea>
             </p>
             <p>
-                <label for="msg">Message:</label>
-                <textarea type="text" id="msg" name="user_message"></textarea>
+                <label for="priority">Priorytet:</label>
+                <select name="priority" id="priority">
+                    <option value=""?>--Wybierz priorytet--
+                    </option>
+                    <option value="niski">Niski</option>
+                    <option value="średni">Średni</option>
+                    <option value="wysoki">Wysoki</option>
+                </select>
             </p>
             <p class="button">
-                <button type="submit">Send your message</button>
+                <button type="submit">Wyślij</button>
             </p>
+        </form>
         <h2>Aktualne zgłoszenie</h2>
     </body>
 </html>
