@@ -8,8 +8,23 @@
     <body>
         <h1>System zgłoszeń awarii</h1>
         <p>Oto system zgłoszeń awarii, poniżej znajdują się aktualne awarie: </p>
-        <h2>Nowe zgłoszenia:</h2>
-        <h2>Aktualnce zgłoszenia:</h2>
-
+        <h2>Nowe zgłoszenie</h2>
+        <form action="/index.html" method="post"></form>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name"/>
+            </p>
+            <p>
+                <label for="mail">E-Mail:</label>
+                <input type="text" id="mail" name="user_email"/>
+            </p>
+            <p>
+                <label for="msg">Message:</label>
+                <textarea type="text" id="msg" name="user_message"></textarea>
+            </p>
+            <p class="button">
+                <button type="submit">Send your message</button>
+            </p>
+        <h2>Aktualne zgłoszenie</h2>
     </body>
 </html>
